@@ -2,4 +2,6 @@ User-agent: *
 Allow: /
 
 User-agent: GPTBot
-Allow
+Allow: /
+
+Sitemap: https://azaguirreramarfp-web.github.io/Ferreteria-Aritello/sitemap.xml
