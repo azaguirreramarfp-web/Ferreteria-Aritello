@@ -1,0 +1,23 @@
+# Ferretería Aritello — Sabadell
+
+> Ferretería local en Sabadell especializada en copia de llaves en el momento, cilindros antibumping y material de ferretería. Sin esperas, sin cita previa. Parking gratuito.
+
+## Negocio
+
+- Nombre: Ferretería Aritello
+- Dirección: Carrer d'Elcano 79, 08204 Sabadell, Barcelona
+- Teléfono: 93 710 59 98
+- Horario: Lunes a viernes 9:00–13:30 / 16:00–19:30 · Sábados 9:00–13:30
+- Parking gratuito para clientes
+
+## Servicios principales
+
+- Copia de llaves en el momento en Sabadell
+- Cilindros antibumping (Mul-T-Lock, EVVA, Keso, FAC)
+- Llaves de alta seguridad y código dinámico (rolling code)
+- Llaves de casa, portal, buzón, candado, coche y moto
+- Ferretería completa
+
+## Web
+
+- https://azaguirreramarfp-web.github.io/Ferreteria-Aritello/
