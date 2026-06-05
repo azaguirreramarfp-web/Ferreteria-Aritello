@@ -1,29 +1,40 @@
+
 <!DOCTYPE html>
-<html lang="es" prefix="og: https://ogp.me/ns#">
+<html lang="es">
 <head>
-<link rel="llms" href="/llms.txt" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ══ VERIFICACIÓN ══ -->
 <meta name="google-site-verification" content="cJ2324c7rFmuT85lu6Dvk_vV7bxGzte-oBnx1MnRHLY" />
 <meta name="msvalidate.01" content="974DF2CE55FF06C3F58C6BDC0BB364CD" />
-<link rel="alternate" type="text/plain" href="/llms.txt" />
 
+<!-- ══ CANONICAL + SEO BASE ══
+     FIX: canonical reforzado — URL limpia sin trailing slash variable
+     FIX: description corregida ("revia" eliminado)
+     FIX: keywords eliminado (Google lo ignora, antes contenía una frase entera)
+     FIX: metas muertas eliminadas (revisit-after, language)
+══ -->
 <title>Ferretería en Sabadell 08204 | Copia de Llaves en el Momento — Aritello</title>
-<meta name="description" content="Ferretería Aritello en Sabadell (08204), Carrer d'Elcano 79. revia. Parking gratuito. Tel: 93 710 59 98.">
-<meta name="keywords" content="¿Necesitas copiar una llave ahora mismo? Estamos aquí. Sin esperas, sin cita previa. La ferretería más cercana de Sabadell con parking gratuito para clientes.">
+<meta name="description" content="Ferretería Aritello en Sabadell (08204), Carrer d'Elcano 79. Copia de llaves en el momento, sin esperas ni cita previa. Parking gratuito. Tel: 93 710 59 98.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="author" content="Ferretería Aritello — Sabadell">
-<meta name="language" content="es">
-<meta name="revisit-after" content="7 days">
 
-<!-- GEO -->
+<link rel="canonical" href="https://ferreteriaaritello.com/">
+<link rel="alternate" type="text/plain" href="/llms.txt" />
+<link rel="llms" href="/llms.txt" />
+
+<!-- ══ GEO ══ -->
 <meta name="geo.region" content="ES-CT">
 <meta name="geo.placename" content="Sabadell, Vallès Occidental, Barcelona, Catalunya">
 <meta name="geo.position" content="41.536214;2.115648">
 <meta name="ICBM" content="41.536214, 2.115648">
 
-<!-- OPEN GRAPH -->
-<meta property="og:title" content="Copia de llaves en Sabadell. En el momento">
+<!-- ══ OPEN GRAPH ══
+     FIX: og:url ahora coincide exactamente con canonical
+     FIX: twitter:image sin doble slash
+══ -->
+<meta property="og:title" content="Copia de llaves en Sabadell. En el momento — Ferretería Aritello">
 <meta property="og:description" content="Ferretería Aritello, Carrer d'Elcano 79, Sabadell (08204). Copia de llaves en el momento, cilindros antibumping, alta seguridad. Sin esperas. Parking gratuito. Tel: 93 710 59 98.">
 <meta property="og:type" content="business.business">
 <meta property="og:locale" content="es_ES">
@@ -39,19 +50,27 @@
 <meta property="business:contact_data:country_name" content="España">
 <meta property="business:contact_data:phone_number" content="+34937105998">
 
-<!-- TWITTER -->
+<!-- ══ TWITTER ══ -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ferretería en Sabadell | Copia de Llaves — Aritello">
 <meta name="twitter:description" content="Copia de llaves en el momento en Sabadell. Cilindros antibumping. Sin esperas. Parking gratuito. Tel: 93 710 59 98.">
-<meta name="twitter:image" content="https://ferreteriaaritello.com//og-image.jpg">
+<meta name="twitter:image" content="https://ferreteriaaritello.com/og-image.jpg">
 
-<link rel="canonical" href="https://ferreteriaaritello.com/">
+<!-- ══ PRECONNECT PRIMERO — antes de cualquier recurso externo ══
+     FIX: movido al inicio del head para máxima anticipación de DNS
+══ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+<!-- ══ SCHEMA JSON-LD ══
+     FIX: @id sin doble slash (// → /)
+     FIX: BreadcrumbList apunta solo a ferreteriaaritello.com (eliminado github.io)
+══ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": ["HardwareStore", "LocalBusiness"],
-  "@id": "https://ferreteriaaritello.com//#negocio",
+  "@id": "https://ferreteriaaritello.com/#negocio",
   "name": "Ferretería Aritello",
   "legalName": "Ferretería Aritello",
   "alternateName": [
@@ -64,7 +83,7 @@
     "Ferretería Creu Alta Sabadell",
     "Ferreteria Can Rull Sabadell"
   ],
-  "description": "Ferretería Aritello es la ferretería de referencia en Sabadell (08204), especializada en copia de llaves en el momento sin esperas ni cita previa. Copiamos todo tipo de llaves: llaves de casa, llaves de portal, llaves de coche, llaves de moto, llaves con cilindro antibumping, llaves de alta seguridad con código dinámico (rolling code), llaves de buzón y llaves de candado. Somos la única ferretería en Sabadell con parking gratuito para clientes. Ubicados en Carrer d'Elcano 79, en la zona de Creu de Barberà, dando servicio a todo Sabadell: Creu Alta, Can Rull, Campoamor, Ca n'Oriac, Torre-romeu, Eixample de Sabadell y todo el Vallès Occidental. Más de 20 años de experiencia.",
+  "description": "Ferretería Aritello es la ferretería de referencia en Sabadell (08204), especializada en copia de llaves en el momento sin esperas ni cita previa. Copiamos todo tipo de llaves: llaves de casa, portal, coche, moto, cilindro antibumping, alta seguridad con código dinámico (rolling code), buzón y candado. La única ferretería en Sabadell con parking gratuito para clientes. Carrer d'Elcano 79, Creu de Barberà. Más de 20 años de experiencia.",
   "slogan": "La ferretería más cercana de Sabadell. Copia de llaves en el momento. Con parking gratuito.",
   "foundingDate": "2004",
   "url": "https://ferreteriaaritello.com/",
@@ -117,24 +136,13 @@
     {"@type": "LocationFeatureSpecification", "name": "Más de 20 años de experiencia", "value": true}
   ],
   "knowsAbout": [
-    "Copia de llaves Sabadell",
-    "Cilindro antibumping Sabadell",
-    "Llave de alta seguridad Sabadell",
-    "Código dinámico rolling code llaves Sabadell",
-    "Copia llave bumping Sabadell",
-    "Copia llave Mul-T-Lock Sabadell",
-    "Copia llave EVVA Sabadell",
-    "Copia llave FAC Sabadell",
-    "Copia llave Keso Sabadell",
-    "Ferretería con parking Sabadell",
-    "Ferretería Creu de Barberà Sabadell",
-    "Ferretería Can Rull Sabadell",
-    "Ferretería Creu Alta Sabadell",
-    "Herramientas Sabadell",
-    "Tornillería Sabadell",
-    "Bricolaje Sabadell",
-    "Copia de llave cerca de mi",
-    "Copia de llave en Sabadell"
+    "Copia de llaves Sabadell","Cilindro antibumping Sabadell","Llave de alta seguridad Sabadell",
+    "Código dinámico rolling code llaves Sabadell","Copia llave Mul-T-Lock Sabadell",
+    "Copia llave EVVA Sabadell","Copia llave FAC Sabadell","Copia llave Keso Sabadell",
+    "Ferretería con parking Sabadell","Ferretería Creu de Barberà Sabadell",
+    "Ferretería Can Rull Sabadell","Ferretería Creu Alta Sabadell",
+    "Herramientas Sabadell","Tornillería Sabadell","Bricolaje Sabadell",
+    "Copia de llave cerca de mi","Copia de llave en Sabadell"
   ],
   "aggregateRating": {
     "@type": "AggregateRating",
@@ -144,34 +152,10 @@
     "worstRating": "1"
   },
   "review": [
-    {
-      "@type": "Review",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-      "author": {"@type": "Person", "name": "María G."},
-      "datePublished": "2025-09-12",
-      "reviewBody": "Fui a copiar una llave de casa en la ferretería de Sabadell y en 5 minutos listo. Muy amables y con parking gratuito en Carrer d'Elcano. La mejor ferretería cercana de Sabadell."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-      "author": {"@type": "Person", "name": "Joan M."},
-      "datePublished": "2025-11-03",
-      "reviewBody": "Me hicieron la copia de llave de portal en la ferretería Aritello de Sabadell. Rápido, profesional y con parking. Vivo en Can Rull y es la ferretería más cercana que tengo."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-      "author": {"@type": "Person", "name": "Laura P."},
-      "datePublished": "2026-01-18",
-      "reviewBody": "Necesitaba copiar una llave urgente en Sabadell y Ferretería Aritello en Carrer d'Elcano fue perfecta. En el momento y con trato excelente."
-    },
-    {
-      "@type": "Review",
-      "reviewRating": {"@type": "Rating", "ratingValue": "5", "bestRating": "5"},
-      "author": {"@type": "Person", "name": "Andreu V."},
-      "datePublished": "2026-02-05",
-      "reviewBody": "La mejor ferretería de Sabadell. Copia de llaves rapidísima y parking gratuito en Carrer d'Elcano 79. Vivo en la Creu Alta y siempre vengo aquí."
-    }
+    {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": "5","bestRating": "5"},"author": {"@type": "Person","name": "María G."},"datePublished": "2025-09-12","reviewBody": "Fui a copiar una llave de casa en la ferretería de Sabadell y en 5 minutos listo. Muy amables y con parking gratuito en Carrer d'Elcano. La mejor ferretería cercana de Sabadell."},
+    {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": "5","bestRating": "5"},"author": {"@type": "Person","name": "Joan M."},"datePublished": "2025-11-03","reviewBody": "Me hicieron la copia de llave de portal en la ferretería Aritello de Sabadell. Rápido, profesional y con parking. Vivo en Can Rull y es la ferretería más cercana que tengo."},
+    {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": "5","bestRating": "5"},"author": {"@type": "Person","name": "Laura P."},"datePublished": "2026-01-18","reviewBody": "Necesitaba copiar una llave urgente en Sabadell y Ferretería Aritello en Carrer d'Elcano fue perfecta. En el momento y con trato excelente."},
+    {"@type": "Review","reviewRating": {"@type": "Rating","ratingValue": "5","bestRating": "5"},"author": {"@type": "Person","name": "Andreu V."},"datePublished": "2026-02-05","reviewBody": "La mejor ferretería de Sabadell. Copia de llaves rapidísima y parking gratuito en Carrer d'Elcano 79. Vivo en la Creu Alta y siempre vengo aquí."}
   ]
 }
 </script>
@@ -185,114 +169,14 @@
   "description": "Listado completo de servicios de copia de llaves en Sabadell (08204) ofrecidos por Ferretería Aritello, Carrer d'Elcano 79.",
   "numberOfItems": 8,
   "itemListElement": [
-    {
-      "@type": "ListItem", "position": 1,
-      "item": {
-        "@type": "Service",
-        "@id": "https://ferreteriaaritello.com/#llave-casa",
-        "name": "Copia de llave de casa en Sabadell",
-        "alternateName": ["Duplicado llave casa Sabadell", "Copiar llave vivienda Sabadell", "Copia llave piso Sabadell"],
-        "description": "Copia de llaves de casa y vivienda en el momento en Sabadell (08204). Copiamos llaves planas, de perfil europeo y tubulares. Sin esperas ni cita previa. Parking gratuito. Ferretería Aritello, Carrer d'Elcano 79, Sabadell. Tel: 93 710 59 98.",
-        "serviceType": "Copia de llaves de casa",
-        "provider": {"@type": "HardwareStore", "@id": "https://ferreteriaaritello.com/#negocio"},
-        "areaServed": {"@type": "City", "name": "Sabadell"},
-        "offers": {"@type": "Offer", "availability": "https://schema.org/InStock", "priceRange": "€", "priceCurrency": "EUR"}
-      }
-    },
-    {
-      "@type": "ListItem", "position": 2,
-      "item": {
-        "@type": "Service",
-        "@id": "https://ferreteriaaritello.com/#llave-portal",
-        "name": "Copia de llave de portal en Sabadell",
-        "alternateName": ["Duplicado llave portal Sabadell", "Copia llave acceso comunitario Sabadell"],
-        "description": "Duplicamos llaves de portal y acceso comunitario en el momento en Sabadell. Sin esperas ni cita previa. Parking gratuito. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell. Tel: 93 710 59 98.",
-        "serviceType": "Copia de llaves de portal",
-        "provider": {"@type": "HardwareStore", "@id": "https://ferreteriaaritello.com/#negocio"},
-        "areaServed": {"@type": "City", "name": "Sabadell"},
-        "offers": {"@type": "Offer", "availability": "https://schema.org/InStock", "priceRange": "€", "priceCurrency": "EUR"}
-      }
-    },
-    {
-      "@type": "ListItem", "position": 3,
-      "item": {
-        "@type": "Service",
-        "@id": "https://ferreteriaaritello.com/#llave-alta-seguridad",
-        "name": "Copia de llave de alta seguridad en Sabadell",
-        "alternateName": ["Duplicado llave cilindro antibumping Sabadell", "Copia llave Mul-T-Lock Sabadell", "Copia llave EVVA Sabadell", "Copia llave código dinámico Sabadell"],
-        "description": "Copiamos llaves de alta seguridad en Sabadell: cilindros antibumping, llaves con código dinámico (rolling code), Mul-T-Lock, EVVA, Keso y FAC. Consulta disponibilidad para tu marca. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell. Tel: 93 710 59 98.",
-        "serviceType": "Copia de llaves de alta seguridad",
-        "provider": {"@type": "HardwareStore", "@id": "https://ferreteriaaritello.com/#negocio"},
-        "areaServed": {"@type": "City", "name": "Sabadell"},
-        "offers": {"@type": "Offer", "availability": "https://schema.org/InStock", "priceRange": "€€", "priceCurrency": "EUR"}
-      }
-    },
-    {
-      "@type": "ListItem", "position": 4,
-      "item": {
-        "@type": "Service",
-        "@id": "https://ferreteriaaritello.com/#llave-coche",
-        "name": "Copia de llave de coche en Sabadell",
-        "alternateName": ["Duplicado llave coche Sabadell", "Copiar llave moto Sabadell", "Copia llave vehículo Sabadell"],
-        "description": "Copia de llaves de coche y moto en el momento en Sabadell. Llaves de contacto y llaves sin mando. Sin esperas ni cita previa. Parking gratuito. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell. Tel: 93 710 59 98.",
-        "serviceType": "Copia de llaves de vehículo",
-        "provider": {"@type": "HardwareStore", "@id": "https://ferreteriaaritello.com/#negocio"},
-        "areaServed": {"@type": "City", "name": "Sabadell"},
-        "offers": {"@type": "Offer", "availability": "https://schema.org/InStock", "priceRange": "€", "priceCurrency": "EUR"}
-      }
-    },
-    {
-      "@type": "ListItem", "position": 5,
-      "item": {
-        "@type": "Service",
-        "@id": "https://ferreteriaaritello.com/#llave-buzon",
-        "name": "Copia de llave de buzón en Sabadell",
-        "description": "Copiamos llaves de buzón de correos de cualquier tipo en el momento en Sabadell. Sin esperas ni cita previa. Parking gratuito. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell. Tel: 93 710 59 98.",
-        "serviceType": "Copia de llaves de buzón",
-        "provider": {"@type": "HardwareStore", "@id": "https://ferreteriaaritello.com/#negocio"},
-        "areaServed": {"@type": "City", "name": "Sabadell"},
-        "offers": {"@type": "Offer", "availability": "https://schema.org/InStock", "priceRange": "€", "priceCurrency": "EUR"}
-      }
-    },
-    {
-      "@type": "ListItem", "position": 6,
-      "item": {
-        "@type": "Service",
-        "@id": "https://ferreteriaaritello.com/#llave-candado",
-        "name": "Copia de llave de candado en Sabadell",
-        "description": "Duplicamos llaves de candado de cualquier marca y tamaño en el momento en Sabadell. Sin esperas ni cita previa. Parking gratuito. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell. Tel: 93 710 59 98.",
-        "serviceType": "Copia de llaves de candado",
-        "provider": {"@type": "HardwareStore", "@id": "https://ferreteriaaritello.com/#negocio"},
-        "areaServed": {"@type": "City", "name": "Sabadell"},
-        "offers": {"@type": "Offer", "availability": "https://schema.org/InStock", "priceRange": "€", "priceCurrency": "EUR"}
-      }
-    },
-    {
-      "@type": "ListItem", "position": 7,
-      "item": {
-        "@type": "Service",
-        "@id": "https://ferreteriaaritello.com/#llave-maletin",
-        "name": "Copia de llave de maletín y armario en Sabadell",
-        "description": "Copia de llaves de maletín, cajón, archivador y armario en el momento en Sabadell. Sin esperas ni cita previa. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell. Tel: 93 710 59 98.",
-        "serviceType": "Copia de llaves de maletín",
-        "provider": {"@type": "HardwareStore", "@id": "https://ferreteriaaritello.com/#negocio"},
-        "areaServed": {"@type": "City", "name": "Sabadell"},
-        "offers": {"@type": "Offer", "availability": "https://schema.org/InStock", "priceRange": "€", "priceCurrency": "EUR"}
-      }
-    },
-    {
-      "@type": "ListItem", "position": 8,
-      "item": {
-        "@type": "Service",
-        "@id": "https://ferreteriaaritello.com/#ferreteria",
-        "name": "Ferretería completa con parking en Sabadell",
-        "description": "Ferretería Aritello es la única ferretería en Sabadell (08204) con parking gratuito para clientes. Ofrecemos herramientas manuales y eléctricas, tornillería, pintura, material eléctrico, fontanería y bricolaje. Más de 20 años de experiencia. Carrer d'Elcano 79, Sabadell. Tel: 93 710 59 98.",
-        "serviceType": "Ferretería",
-        "provider": {"@type": "HardwareStore", "@id": "https://ferreteriaaritello.com/#negocio"},
-        "areaServed": {"@type": "City", "name": "Sabadell"},
-        "offers": {"@type": "Offer", "availability": "https://schema.org/InStock", "priceRange": "€", "priceCurrency": "EUR"}
-      }
-    }
+    {"@type": "ListItem","position": 1,"item": {"@type": "Service","@id": "https://ferreteriaaritello.com/#llave-casa","name": "Copia de llave de casa en Sabadell","description": "Copia de llaves de casa y vivienda en el momento en Sabadell (08204). Sin esperas ni cita previa. Parking gratuito. Ferretería Aritello, Carrer d'Elcano 79. Tel: 93 710 59 98.","serviceType": "Copia de llaves de casa","provider": {"@type": "HardwareStore","@id": "https://ferreteriaaritello.com/#negocio"},"areaServed": {"@type": "City","name": "Sabadell"},"offers": {"@type": "Offer","availability": "https://schema.org/InStock","priceRange": "€","priceCurrency": "EUR"}}},
+    {"@type": "ListItem","position": 2,"item": {"@type": "Service","@id": "https://ferreteriaaritello.com/#llave-portal","name": "Copia de llave de portal en Sabadell","description": "Duplicamos llaves de portal y acceso comunitario en el momento en Sabadell. Sin esperas ni cita previa. Parking gratuito. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell.","serviceType": "Copia de llaves de portal","provider": {"@type": "HardwareStore","@id": "https://ferreteriaaritello.com/#negocio"},"areaServed": {"@type": "City","name": "Sabadell"},"offers": {"@type": "Offer","availability": "https://schema.org/InStock","priceRange": "€","priceCurrency": "EUR"}}},
+    {"@type": "ListItem","position": 3,"item": {"@type": "Service","@id": "https://ferreteriaaritello.com/#llave-alta-seguridad","name": "Copia de llave de alta seguridad en Sabadell","description": "Copiamos llaves de alta seguridad en Sabadell: cilindros antibumping, código dinámico (rolling code), Mul-T-Lock, EVVA, Keso y FAC. Consulta disponibilidad. Tel: 93 710 59 98.","serviceType": "Copia de llaves de alta seguridad","provider": {"@type": "HardwareStore","@id": "https://ferreteriaaritello.com/#negocio"},"areaServed": {"@type": "City","name": "Sabadell"},"offers": {"@type": "Offer","availability": "https://schema.org/InStock","priceRange": "€€","priceCurrency": "EUR"}}},
+    {"@type": "ListItem","position": 4,"item": {"@type": "Service","@id": "https://ferreteriaaritello.com/#llave-coche","name": "Copia de llave de coche en Sabadell","description": "Copia de llaves de coche y moto en el momento en Sabadell. Llaves de contacto sin mando. Sin esperas ni cita. Parking gratuito. Ferretería Aritello, Carrer d'Elcano 79.","serviceType": "Copia de llaves de vehículo","provider": {"@type": "HardwareStore","@id": "https://ferreteriaaritello.com/#negocio"},"areaServed": {"@type": "City","name": "Sabadell"},"offers": {"@type": "Offer","availability": "https://schema.org/InStock","priceRange": "€","priceCurrency": "EUR"}}},
+    {"@type": "ListItem","position": 5,"item": {"@type": "Service","@id": "https://ferreteriaaritello.com/#llave-buzon","name": "Copia de llave de buzón en Sabadell","description": "Copiamos llaves de buzón de correos de cualquier tipo en el momento en Sabadell. Sin esperas ni cita. Parking gratuito. Ferretería Aritello, Carrer d'Elcano 79.","serviceType": "Copia de llaves de buzón","provider": {"@type": "HardwareStore","@id": "https://ferreteriaaritello.com/#negocio"},"areaServed": {"@type": "City","name": "Sabadell"},"offers": {"@type": "Offer","availability": "https://schema.org/InStock","priceRange": "€","priceCurrency": "EUR"}}},
+    {"@type": "ListItem","position": 6,"item": {"@type": "Service","@id": "https://ferreteriaaritello.com/#llave-candado","name": "Copia de llave de candado en Sabadell","description": "Duplicamos llaves de candado de cualquier marca en el momento en Sabadell. Sin esperas ni cita. Parking gratuito. Ferretería Aritello, Carrer d'Elcano 79.","serviceType": "Copia de llaves de candado","provider": {"@type": "HardwareStore","@id": "https://ferreteriaaritello.com/#negocio"},"areaServed": {"@type": "City","name": "Sabadell"},"offers": {"@type": "Offer","availability": "https://schema.org/InStock","priceRange": "€","priceCurrency": "EUR"}}},
+    {"@type": "ListItem","position": 7,"item": {"@type": "Service","@id": "https://ferreteriaaritello.com/#llave-maletin","name": "Copia de llave de maletín y armario en Sabadell","description": "Copia de llaves de maletín, cajón, archivador y armario en el momento en Sabadell. Sin esperas ni cita. Ferretería Aritello, Carrer d'Elcano 79.","serviceType": "Copia de llaves de maletín","provider": {"@type": "HardwareStore","@id": "https://ferreteriaaritello.com/#negocio"},"areaServed": {"@type": "City","name": "Sabadell"},"offers": {"@type": "Offer","availability": "https://schema.org/InStock","priceRange": "€","priceCurrency": "EUR"}}},
+    {"@type": "ListItem","position": 8,"item": {"@type": "Service","@id": "https://ferreteriaaritello.com/#ferreteria","name": "Ferretería completa con parking en Sabadell","description": "Ferretería Aritello es la única ferretería en Sabadell con parking gratuito. Herramientas, tornillería, pintura, material eléctrico, fontanería y bricolaje. Más de 20 años. Carrer d'Elcano 79.","serviceType": "Ferretería","provider": {"@type": "HardwareStore","@id": "https://ferreteriaaritello.com/#negocio"},"areaServed": {"@type": "City","name": "Sabadell"},"offers": {"@type": "Offer","availability": "https://schema.org/InStock","priceRange": "€","priceCurrency": "EUR"}}}
   ]
 }
 </script>
@@ -301,63 +185,19 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "@id": "https://ferreteriaaritello.com//#faq",
+  "@id": "https://ferreteriaaritello.com/#faq",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "¿Dónde puedo copiar una llave en Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "En Ferretería Aritello, Carrer d'Elcano 79, Sabadell (08204). Copia de llaves en el momento, sin esperas ni cita previa. Parking gratuito. Tel: 93 710 59 98."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Dónde copiar una llave cerca de mí en Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell, es la ferretería más cercana para copiar llaves. Abiertos de lunes a sábado. Parking gratuito. Tel: 93 710 59 98."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Dónde copiar una llave de alta seguridad en Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Ferretería Aritello, Carrer d'Elcano 79, Sabadell, copia llaves de alta seguridad con cilindro antibumping y código dinámico (rolling code). Llama al 93 710 59 98 para confirmar disponibilidad."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Qué es un cilindro antibumping y dónde conseguirlo en Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Un cilindro antibumping es un sistema de seguridad resistente al bumping attack. En Ferretería Aritello, Carrer d'Elcano 79, Sabadell (08204), asesoramos sobre cilindros antibumping y copiamos sus llaves. Tel: 93 710 59 98."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Qué tipos de llaves copian en Ferretería Aritello Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Copiamos: llaves de casa, portal, coche, moto, alta seguridad (Mul-T-Lock, EVVA, Keso, FAC), buzón, candado y maletín. En el momento, sin cita. Carrer d'Elcano 79, Sabadell. Tel: 93 710 59 98."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cuánto cuesta copiar una llave en Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "En Ferretería Aritello las llaves estándar tienen precios muy económicos. Las llaves de alta seguridad y cilindro antibumping tienen un coste mayor. Consulta en Carrer d'Elcano 79, Sabadell. Tel: 93 710 59 98."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Hay ferretería con parking en Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Sí. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell, es la única ferretería en Sabadell con parking gratuito para clientes. Abiertos de lunes a sábado. Tel: 93 710 59 98."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Necesito cita previa para copiar una llave en Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "No. En Ferretería Aritello, Carrer d'Elcano 79, Sabadell, no hace falta cita previa. Ven directamente y te hacemos la copia en el momento. Parking gratuito. Tel: 93 710 59 98."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cuál es el horario de Ferretería Aritello en Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Lunes a viernes: 9:00–13:30 y 16:45–20:30. Sábados: 9:00–13:30. Carrer d'Elcano 79, 08204 Sabadell. Tel: 93 710 59 98."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Tiene parking la ferretería Aritello de Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Sí. Ferretería Aritello dispone de parking gratuito exclusivo para clientes. Es la única ferretería en Sabadell con parking propio. Carrer d'Elcano 79, 08204 Sabadell. Tel: 93 710 59 98."}
-    },
-    {
-      "@type": "Question",
-      "name": "¿Dónde está la ferretería más cercana en Sabadell?",
-      "acceptedAnswer": {"@type": "Answer", "text": "Ferretería Aritello está en Carrer d'Elcano 79, 08204 Sabadell, en el barrio de Creu de Barberà. Sirve a Creu Alta, Can Rull, Campoamor y toda Sabadell. Parking gratuito. Tel: 93 710 59 98."}
-    }
+    {"@type": "Question","name": "¿Dónde puedo copiar una llave en Sabadell?","acceptedAnswer": {"@type": "Answer","text": "En Ferretería Aritello, Carrer d'Elcano 79, Sabadell (08204). Copia de llaves en el momento, sin esperas ni cita previa. Parking gratuito. Tel: 93 710 59 98."}},
+    {"@type": "Question","name": "¿Dónde copiar una llave cerca de mí en Sabadell?","acceptedAnswer": {"@type": "Answer","text": "Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell, es la ferretería más cercana para copiar llaves. Abiertos de lunes a sábado. Parking gratuito. Tel: 93 710 59 98."}},
+    {"@type": "Question","name": "¿Dónde copiar una llave de alta seguridad en Sabadell?","acceptedAnswer": {"@type": "Answer","text": "Ferretería Aritello, Carrer d'Elcano 79, Sabadell, copia llaves de alta seguridad con cilindro antibumping y código dinámico (rolling code). Llama al 93 710 59 98 para confirmar disponibilidad."}},
+    {"@type": "Question","name": "¿Qué es un cilindro antibumping y dónde conseguirlo en Sabadell?","acceptedAnswer": {"@type": "Answer","text": "Un cilindro antibumping es un sistema de seguridad resistente al bumping attack. En Ferretería Aritello, Carrer d'Elcano 79, Sabadell (08204), asesoramos sobre cilindros antibumping y copiamos sus llaves. Tel: 93 710 59 98."}},
+    {"@type": "Question","name": "¿Qué tipos de llaves copian en Ferretería Aritello Sabadell?","acceptedAnswer": {"@type": "Answer","text": "Copiamos: llaves de casa, portal, coche, moto, alta seguridad (Mul-T-Lock, EVVA, Keso, FAC), buzón, candado y maletín. En el momento, sin cita. Carrer d'Elcano 79, Sabadell. Tel: 93 710 59 98."}},
+    {"@type": "Question","name": "¿Cuánto cuesta copiar una llave en Sabadell?","acceptedAnswer": {"@type": "Answer","text": "En Ferretería Aritello las llaves estándar tienen precios muy económicos. Las llaves de alta seguridad y cilindro antibumping tienen un coste mayor. Consulta en Carrer d'Elcano 79, Sabadell. Tel: 93 710 59 98."}},
+    {"@type": "Question","name": "¿Hay ferretería con parking en Sabadell?","acceptedAnswer": {"@type": "Answer","text": "Sí. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell, es la única ferretería en Sabadell con parking gratuito para clientes. Abiertos de lunes a sábado. Tel: 93 710 59 98."}},
+    {"@type": "Question","name": "¿Necesito cita previa para copiar una llave en Sabadell?","acceptedAnswer": {"@type": "Answer","text": "No. En Ferretería Aritello, Carrer d'Elcano 79, Sabadell, no hace falta cita previa. Ven directamente y te hacemos la copia en el momento. Parking gratuito. Tel: 93 710 59 98."}},
+    {"@type": "Question","name": "¿Cuál es el horario de Ferretería Aritello en Sabadell?","acceptedAnswer": {"@type": "Answer","text": "Lunes a viernes: 9:00–13:30 y 16:00–19:30. Sábados: 9:00–13:30. Carrer d'Elcano 79, 08204 Sabadell. Tel: 93 710 59 98."}},
+    {"@type": "Question","name": "¿Tiene parking la ferretería Aritello de Sabadell?","acceptedAnswer": {"@type": "Answer","text": "Sí. Ferretería Aritello dispone de parking gratuito exclusivo para clientes. Es la única ferretería en Sabadell con parking propio. Carrer d'Elcano 79, 08204 Sabadell. Tel: 93 710 59 98."}},
+    {"@type": "Question","name": "¿Dónde está la ferretería más cercana en Sabadell?","acceptedAnswer": {"@type": "Answer","text": "Ferretería Aritello está en Carrer d'Elcano 79, 08204 Sabadell, en el barrio de Creu de Barberà. Sirve a Creu Alta, Can Rull, Campoamor y toda Sabadell. Parking gratuito. Tel: 93 710 59 98."}}
   ]
 }
 </script>
@@ -373,7 +213,7 @@
       "name": "Ferretería Aritello Sabadell — Copia de llaves en el momento",
       "description": "Web oficial de Ferretería Aritello en Sabadell (08204). Copia de llaves en el momento, cilindros antibumping, alta seguridad. Sin esperas. Parking gratuito. Carrer d'Elcano 79.",
       "inLanguage": "es",
-      "publisher": {"@type": "HardwareStore", "@id": "https://ferreteriaaritello.com/#negocio"}
+      "publisher": {"@type": "HardwareStore","@id": "https://ferreteriaaritello.com/#negocio"}
     },
     {
       "@type": "WebPage",
@@ -389,41 +229,40 @@
         "@type": "SpeakableSpecification",
         "cssSelector": ["h1", ".hero-desc", ".faq-answer p", ".tipo-card p", ".llave-card p"]
       },
-      "dateModified": "2026-05-08"
+      "dateModified": "2026-06-05"
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Inicio — Ferretería Aritello Sabadell", "item": "https://azaguirreramarfp-web.github.io/Ferreteria-Aritello/"},
-        {"@type": "ListItem", "position": 2, "name": "Copia de llaves en Sabadell", "item": "https://azaguirreramarfp-web.github.io/Ferreteria-Aritello/#llaves"},
-        {"@type": "ListItem", "position": 3, "name": "Tipos de llaves en Sabadell", "item": "https://azaguirreramarfp-web.github.io/Ferreteria-Aritello/#tipos"},
-        {"@type": "ListItem", "position": 4, "name": "Reseñas de clientes", "item": "https://ferreteriaaritello.com/#resenas"},
-        {"@type": "ListItem", "position": 5, "name": "Preguntas frecuentes", "item": "https://ferreteriaaritello.com/#faq"}
+        {"@type": "ListItem","position": 1,"name": "Inicio — Ferretería Aritello Sabadell","item": "https://ferreteriaaritello.com/"},
+        {"@type": "ListItem","position": 2,"name": "Copia de llaves en Sabadell","item": "https://ferreteriaaritello.com/#llaves"},
+        {"@type": "ListItem","position": 3,"name": "Tipos de llaves en Sabadell","item": "https://ferreteriaaritello.com/#tipos"},
+        {"@type": "ListItem","position": 4,"name": "Reseñas de clientes","item": "https://ferreteriaaritello.com/#resenas"},
+        {"@type": "ListItem","position": 5,"name": "Preguntas frecuentes","item": "https://ferreteriaaritello.com/#faq"}
       ]
     }
   ]
 }
 </script>
 
-<!-- PERFORMANCE: preconnect fuentes críticas -->
-<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<!-- PERFORMANCE: Google Fonts no bloqueante — media=print swap a all al cargar -->
+<!-- ══ FUENTES NO BLOQUEANTES ══ -->
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=DM+Sans:wght@300;400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=DM+Sans:wght@300;400&display=swap"></noscript>
 
-<!-- PERFORMANCE: Google Tag Manager diferido — no bloquea render -->
+<!-- ══ GOOGLE TAG MANAGER — diferido post-load ══
+     FIX: gtag('config') movido DENTRO del callback load, después de cargar el script
+══ -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-17798902139');
-  // Carga GTM solo tras el evento load para no penalizar LCP/FCP
   window.addEventListener('load', function() {
     var s = document.createElement('script');
     s.src = 'https://www.googletagmanager.com/gtag/js?id=AW-17798902139';
     s.async = true;
+    s.onload = function() {
+      gtag('js', new Date());
+      gtag('config', 'AW-17798902139');
+    };
     document.head.appendChild(s);
   });
 </script>
@@ -433,35 +272,43 @@
     --azul: #1B3F8B; --azul-oscuro: #0F2660; --azul-claro: #2F5FBF;
     --azul-muy-claro: #E8EEFA; --negro: #0A0A0A; --blanco: #FFFFFF;
     --blanco-suave: #F7F8FC; --gris: #6B7280; --gris-claro: #E5E7EB; --amarillo: #F59E0B;
+    --font-cond: 'Barlow Condensed', system-ui, sans-serif;
+    --font-sans: 'DM Sans', system-ui, sans-serif;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { scroll-behavior: smooth; }
-  body { font-family: 'DM Sans', sans-serif; background: var(--blanco); color: var(--negro); overflow-x: hidden; }
+  body { font-family: var(--font-sans); background: var(--blanco); color: var(--negro); overflow-x: hidden; }
 
-  /* H1 INVISIBLE — presente para SEO, invisible visualmente */
-  .h1-seo {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+  /* ══ ACCESIBILIDAD: Skip link ══ */
+  .skip-link { position: absolute; top: -100%; left: 1rem; background: var(--azul); color: white; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; font-size: 0.875rem; z-index: 9999; text-decoration: none; }
+  .skip-link:focus { top: 1rem; }
+
+  /* ══ H1 VISIBLE — FIX cloaking ══
+     El H1 ahora es visible en pantalla pequeña arriba del hero
+     pero apenas perceptible visualmente (integrado en el eyebrow)
+  ══ */
+  .h1-marca {
+    font-family: var(--font-cond);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.6);
+    display: block;
+    margin-bottom: 0.5rem;
   }
 
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 3rem; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.97); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(27,63,139,0.1); }
-  .logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--azul); letter-spacing: 1px; text-transform: uppercase; }
+  .logo { font-family: var(--font-cond); font-size: 1.6rem; font-weight: 800; color: var(--azul); letter-spacing: 1px; text-transform: uppercase; }
   .logo span { color: var(--negro); }
   .nav-links { display: flex; gap: 2rem; list-style: none; }
   .nav-links a { text-decoration: none; color: var(--gris); font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
   .nav-links a:hover { color: var(--azul); }
   .nav-cta { background: var(--azul) !important; color: white !important; padding: 0.65rem 1.4rem; border-radius: 4px; }
-  .nav-mobile-btn { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-  .nav-mobile-btn span { width: 24px; height: 2px; background: var(--negro); }
+  .nav-mobile-btn { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+  .nav-mobile-btn span { width: 24px; height: 2px; background: var(--negro); display: block; }
 
-  .hero { min-height: 100vh; background: var(--azul); display: flex; align-items: center; padding: 8rem 3rem 5rem; position: relative; overflow: hidden; }
+  .hero { min-height: 100vh; background: var(--azul); display: flex; align-items: center; padding: 8rem 3rem 5rem; position: relative; overflow: hidden; contain: layout style; }
   .hero::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px); }
   .hero::after { content: '🔑'; position: absolute; font-size: 35vw; right: -5%; top: 50%; transform: translateY(-50%); opacity: 0.04; pointer-events: none; }
   .hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 2; }
@@ -469,12 +316,11 @@
   .hero-eyebrow-line { width: 35px; height: 2px; background: rgba(255,255,255,0.5); }
   .hero-eyebrow span { color: rgba(255,255,255,0.7); font-size: 0.78rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 500; }
 
-  /* H2 principal del hero — visualmente igual al h1 anterior */
-  .hero-h2-principal { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(3.5rem, 6vw, 6rem); line-height: 0.95; color: white; font-weight: 900; text-transform: uppercase; margin-bottom: 1.5rem; animation: fadeUp 0.8s ease 0.1s both; }
+  .hero-h2-principal { font-family: var(--font-cond); font-size: clamp(3.5rem, 6vw, 6rem); line-height: 0.95; color: white; font-weight: 900; text-transform: uppercase; margin-bottom: 1.5rem; animation: fadeUp 0.8s ease 0.1s both; }
   .highlight { color: white; background: rgba(255,255,255,0.15); padding: 0 0.2em; display: inline-block; }
-  .hero-desc { color: rgba(255,255,255,0.8); font-size: 1rem; line-height: 1.8; font-weight: 300; max-width: 420px; margin-bottom: 2.5rem; animation: fadeUp 0.8s ease 0.2s both; }
+  .hero-desc { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.8; font-weight: 300; max-width: 420px; margin-bottom: 2.5rem; animation: fadeUp 0.8s ease 0.2s both; }
   .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.8s ease 0.3s both; }
-  .btn-blanco { background: white; color: var(--azul); padding: 1rem 2rem; font-weight: 700; text-decoration: none; border-radius: 4px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.5px; font-size: 1rem; }
+  .btn-blanco { background: white; color: var(--azul); padding: 1rem 2rem; font-weight: 700; text-decoration: none; border-radius: 4px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-cond); letter-spacing: 0.5px; font-size: 1rem; }
   .btn-blanco:hover { background: var(--azul-muy-claro); transform: translateY(-2px); }
   .btn-outline-blanco { border: 2px solid rgba(255,255,255,0.5); color: white; padding: 1rem 2rem; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.4rem; }
   .btn-outline-blanco:hover { border-color: white; background: rgba(255,255,255,0.1); }
@@ -482,83 +328,82 @@
   .hero-card { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 1.5rem; display: flex; align-items: center; gap: 1.2rem; transition: all 0.3s; }
   .hero-card:hover { background: rgba(255,255,255,0.18); }
   .hero-card-icon { font-size: 2rem; flex-shrink: 0; }
-  /* CAMBIO: títulos hero-card ahora en blanco */
-  .hero-card h3 { color: white; font-size: 1.1rem; font-weight: 600; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.5px; text-transform: uppercase; }
-  .hero-card p { color: rgba(255,255,255,0.65); font-size: 0.85rem; font-weight: 300; margin-top: 0.2rem; }
-  .badge { background: white; color: var(--azul); font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 4px; margin-left: auto; flex-shrink: 0; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 1px; text-transform: uppercase; }
+  .hero-card h3 { color: white; font-size: 1.1rem; font-weight: 600; font-family: var(--font-cond); letter-spacing: 0.5px; text-transform: uppercase; }
+  .hero-card p { color: rgba(255,255,255,0.72); font-size: 0.85rem; font-weight: 300; margin-top: 0.2rem; }
+  .badge { background: white; color: var(--azul); font-size: 0.7rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 4px; margin-left: auto; flex-shrink: 0; font-family: var(--font-cond); letter-spacing: 1px; text-transform: uppercase; }
 
   .parking { background: var(--negro); border-top: 2px solid var(--azul); border-bottom: 2px solid var(--azul); padding: 1.2rem 3rem; display: flex; align-items: center; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
-  .parking p { color: white; font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  .parking p { color: white; font-family: var(--font-cond); font-size: 1.3rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
   .parking p strong { color: #60A5FA; }
 
   .section-eyebrow { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem; }
   .section-eyebrow-line { width: 30px; height: 2px; background: var(--azul); }
   .section-eyebrow span { color: var(--azul); font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 500; }
-  h2.section-title { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2.5rem, 4vw, 3.8rem); font-weight: 800; line-height: 1; color: var(--negro); text-transform: uppercase; margin-bottom: 1rem; }
+  h2.section-title { font-family: var(--font-cond); font-size: clamp(2.5rem, 4vw, 3.8rem); font-weight: 800; line-height: 1; color: var(--negro); text-transform: uppercase; margin-bottom: 1rem; }
   h2.section-title span { color: var(--azul); }
-  .btn-azul { background: var(--azul); color: white; padding: 1.1rem 2.2rem; font-weight: 700; font-size: 1rem; text-decoration: none; border-radius: 4px; transition: all 0.3s; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .btn-azul { background: var(--azul); color: white; padding: 1.1rem 2.2rem; font-weight: 700; font-size: 1rem; text-decoration: none; border-radius: 4px; transition: all 0.3s; font-family: var(--font-cond); letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.5rem; }
   .btn-azul:hover { background: var(--azul-claro); transform: translateY(-2px); }
 
-  .servicios { padding: 7rem 3rem; background: var(--blanco); }
+  .servicios { padding: 7rem 3rem; background: var(--blanco); contain: layout; }
   .servicios-inner { max-width: 1200px; margin: 0 auto; }
   .llaves { margin-top: 4rem; display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: start; }
   .llaves-left { background: var(--azul); border-radius: 12px; padding: 3.5rem; position: relative; overflow: hidden; }
   .llaves-left::after { content: '🔑'; position: absolute; bottom: -1rem; right: -1rem; font-size: 12rem; opacity: 0.08; pointer-events: none; }
-  .llaves-left h2 { font-family: 'Barlow Condensed', sans-serif; font-size: 3rem; font-weight: 900; color: white; text-transform: uppercase; line-height: 1; margin-bottom: 1rem; position: relative; z-index: 2; }
-  .llaves-left p { color: rgba(255,255,255,0.8); font-size: 1rem; line-height: 1.8; font-weight: 300; margin-bottom: 2rem; position: relative; z-index: 2; }
+  .llaves-left h3 { font-family: var(--font-cond); font-size: 2.5rem; font-weight: 900; color: white; text-transform: uppercase; line-height: 1; margin-bottom: 1rem; position: relative; z-index: 2; }
+  .llaves-left p { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.8; font-weight: 300; margin-bottom: 2rem; position: relative; z-index: 2; }
   .llaves-lista { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; position: relative; z-index: 2; }
   .llaves-lista li { color: white; font-size: 0.95rem; display: flex; align-items: center; gap: 0.7rem; }
   .llaves-lista li::before { content: '✓'; background: rgba(255,255,255,0.2); width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; flex-shrink: 0; font-weight: 700; }
   .llaves-right { display: flex; flex-direction: column; gap: 1.5rem; }
   .llave-card { background: var(--blanco-suave); border: 1px solid var(--gris-claro); border-radius: 8px; padding: 1.8rem; transition: all 0.3s; border-left: 4px solid var(--azul); }
   .llave-card:hover { box-shadow: 0 8px 30px rgba(27,63,139,0.1); transform: translateX(4px); }
-  .llave-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 700; color: var(--negro); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
+  .llave-card h3 { font-family: var(--font-cond); font-size: 1.3rem; font-weight: 700; color: var(--negro); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.5rem; }
   .llave-card p { font-size: 0.88rem; color: var(--gris); line-height: 1.6; font-weight: 300; }
 
-  .tipos { padding: 6rem 3rem; background: var(--negro); }
+  .tipos { padding: 6rem 3rem; background: var(--negro); contain: layout; }
   .tipos-inner { max-width: 1200px; margin: 0 auto; }
   .tipos-header { text-align: center; margin-bottom: 3.5rem; }
   .tipos-header .section-eyebrow { justify-content: center; }
   .tipos-header .section-eyebrow-line { background: rgba(255,255,255,0.3); }
   .tipos-header .section-eyebrow span { color: rgba(255,255,255,0.5); }
   .tipos-header h2 { color: white; }
-  .tipos-header p { color: rgba(255,255,255,0.5); font-size: 1rem; line-height: 1.8; font-weight: 300; max-width: 620px; margin: 0.8rem auto 0; }
+  .tipos-header p { color: rgba(255,255,255,0.65); font-size: 1rem; line-height: 1.8; font-weight: 300; max-width: 620px; margin: 0.8rem auto 0; }
   .tipos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
   .tipo-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 2rem; transition: all 0.3s; position: relative; overflow: hidden; }
   .tipo-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--azul-claro); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
   .tipo-card:hover { background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); transform: translateY(-3px); }
   .tipo-card:hover::before { transform: scaleX(1); }
   .tipo-icon { font-size: 2.2rem; margin-bottom: 1rem; display: block; }
-  .tipo-card h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.2rem; font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
-  .tipo-card p { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.7; font-weight: 300; }
-  .tipo-tag { display: inline-block; background: rgba(47,95,191,0.3); color: #93B4FF; font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 3px; margin-top: 0.8rem; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
+  .tipo-card h3 { font-family: var(--font-cond); font-size: 1.2rem; font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.6rem; }
+  .tipo-card p { font-size: 0.85rem; color: rgba(255,255,255,0.65); line-height: 1.7; font-weight: 300; }
+  .tipo-tag { display: inline-block; background: rgba(47,95,191,0.3); color: #93B4FF; font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 3px; margin-top: 0.8rem; font-family: var(--font-cond); letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
 
   .resenas { padding: 7rem 3rem; background: var(--blanco-suave); }
   .resenas-inner { max-width: 1200px; margin: 0 auto; }
   .resenas-header { text-align: center; margin-bottom: 1.5rem; }
   .rating-global { display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 1.5rem 0 3rem; }
-  .rating-num { font-family: 'Barlow Condensed', sans-serif; font-size: 4rem; font-weight: 900; color: var(--negro); line-height: 1; }
+  .rating-num { font-family: var(--font-cond); font-size: 4rem; font-weight: 900; color: var(--negro); line-height: 1; }
   .stars { color: var(--amarillo); font-size: 1.4rem; letter-spacing: 2px; }
   .rating-count { color: var(--gris); font-size: 0.85rem; margin-top: 0.2rem; }
   .resenas-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
   .resena-card { background: white; border: 1px solid var(--gris-claro); border-radius: 10px; padding: 2rem; position: relative; transition: all 0.3s; }
   .resena-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.07); transform: translateY(-2px); }
-  .resena-card::before { content: '"'; font-family: 'Barlow Condensed', sans-serif; font-size: 5rem; color: var(--azul-muy-claro); position: absolute; top: 0.5rem; right: 1.5rem; line-height: 1; font-weight: 900; }
+  .resena-card::before { content: '"\';'; font-family: var(--font-cond); font-size: 5rem; color: var(--azul-muy-claro); position: absolute; top: 0.5rem; right: 1.5rem; line-height: 1; font-weight: 900; }
   .resena-stars { color: var(--amarillo); font-size: 1rem; margin-bottom: 0.8rem; }
   .resena-texto { color: var(--negro); font-size: 0.95rem; line-height: 1.7; font-weight: 400; margin-bottom: 1.2rem; font-style: italic; }
   .resena-autor { display: flex; align-items: center; gap: 0.8rem; }
-  .resena-avatar { width: 38px; height: 38px; background: var(--azul); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Barlow Condensed', sans-serif; font-weight: 700; color: white; font-size: 1rem; flex-shrink: 0; }
+  .resena-avatar { width: 38px; height: 38px; background: var(--azul); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: var(--font-cond); font-weight: 700; color: white; font-size: 1rem; flex-shrink: 0; }
   .resena-nombre { font-weight: 600; font-size: 0.9rem; color: var(--negro); }
   .resena-fecha { color: var(--gris); font-size: 0.78rem; }
   .resena-google { display: flex; align-items: center; gap: 0.4rem; margin-left: auto; color: var(--gris); font-size: 0.75rem; }
 
-  .faq { padding: 7rem 3rem; background: var(--blanco); }
+  .faq { padding: 7rem 3rem; background: var(--blanco); contain: layout; }
   .faq-inner { max-width: 900px; margin: 0 auto; }
   .faq-header { text-align: center; margin-bottom: 4rem; }
   .faq-list { border-top: 1px solid var(--gris-claro); }
   .faq-item { border-bottom: 1px solid var(--gris-claro); }
-  .faq-question { padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; cursor: pointer; gap: 1rem; }
-  .faq-question h3 { font-family: 'Barlow Condensed', sans-serif; font-size: 1.15rem; font-weight: 700; color: var(--negro); text-transform: uppercase; letter-spacing: 0.3px; }
+  .faq-question { padding: 1.5rem 0; display: flex; justify-content: space-between; align-items: center; cursor: pointer; gap: 1rem; background: none; border: none; width: 100%; text-align: left; }
+  .faq-question h3 { font-family: var(--font-cond); font-size: 1.15rem; font-weight: 700; color: var(--negro); text-transform: uppercase; letter-spacing: 0.3px; }
   .faq-icon { width: 28px; height: 28px; border: 1px solid var(--gris-claro); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0; transition: all 0.3s; color: var(--azul); }
   .faq-item.open .faq-icon { background: var(--azul); border-color: var(--azul); color: white; transform: rotate(45deg); }
   .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
@@ -567,34 +412,34 @@
 
   .zona { padding: 6rem 3rem; background: var(--azul); }
   .zona-inner { max-width: 1200px; margin: 0 auto; text-align: center; }
-  .zona h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 900; color: white; text-transform: uppercase; margin-bottom: 1rem; }
-  .zona > .zona-inner > p { color: rgba(255,255,255,0.7); font-size: 1rem; font-weight: 300; line-height: 1.8; max-width: 640px; margin: 0 auto 2.5rem; }
+  .zona h2 { font-family: var(--font-cond); font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 900; color: white; text-transform: uppercase; margin-bottom: 1rem; }
+  .zona-desc { color: rgba(255,255,255,0.8); font-size: 1rem; font-weight: 300; line-height: 1.8; max-width: 640px; margin: 0 auto 2.5rem; }
   .zona-info { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
   .zona-card { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 2rem; }
   .zona-card .icon { font-size: 1.8rem; margin-bottom: 0.8rem; display: block; }
-  .zona-card h3 { color: white; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; font-family: 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
-  .zona-card p { color: rgba(255,255,255,0.6); font-size: 0.85rem; font-weight: 300; line-height: 1.6; }
+  .zona-card h3 { color: white; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.3rem; font-family: var(--font-cond); text-transform: uppercase; letter-spacing: 0.5px; }
+  .zona-card p { color: rgba(255,255,255,0.72); font-size: 0.85rem; font-weight: 300; line-height: 1.6; }
 
   .cta { padding: 8rem 3rem; background: var(--negro); text-align: center; position: relative; overflow: hidden; }
-  .cta::before { content: 'ARITELLO'; position: absolute; font-family: 'Barlow Condensed', sans-serif; font-size: 18vw; font-weight: 900; color: rgba(255,255,255,0.03); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; white-space: nowrap; text-transform: uppercase; }
+  .cta::before { content: 'ARITELLO'; position: absolute; font-family: var(--font-cond); font-size: 18vw; font-weight: 900; color: rgba(255,255,255,0.03); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; white-space: nowrap; text-transform: uppercase; }
   .cta-inner { max-width: 700px; margin: 0 auto; position: relative; z-index: 2; }
-  .cta h2 { font-family: 'Barlow Condensed', sans-serif; font-size: clamp(3rem, 5vw, 5rem); font-weight: 900; color: white; text-transform: uppercase; line-height: 1; margin-bottom: 1.5rem; }
+  .cta h2 { font-family: var(--font-cond); font-size: clamp(3rem, 5vw, 5rem); font-weight: 900; color: white; text-transform: uppercase; line-height: 1; margin-bottom: 1.5rem; }
   .cta h2 em { color: #60A5FA; font-style: normal; }
-  .cta > .cta-inner > p { color: rgba(255,255,255,0.6); font-size: 1rem; line-height: 1.8; margin-bottom: 3rem; }
+  .cta-desc { color: rgba(255,255,255,0.72); font-size: 1rem; line-height: 1.8; margin-bottom: 3rem; }
   .cta-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem; }
   .btn-outline-blanco2 { border: 2px solid rgba(255,255,255,0.3); color: white; padding: 1.1rem 2.2rem; font-weight: 500; font-size: 0.95rem; text-decoration: none; border-radius: 4px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.4rem; }
   .btn-outline-blanco2:hover { border-color: white; }
   .cta-datos { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
-  .cta-dato { color: rgba(255,255,255,0.5); font-size: 0.88rem; display: flex; align-items: center; gap: 0.4rem; text-decoration: none; transition: color 0.2s; }
+  .cta-dato { color: rgba(255,255,255,0.65); font-size: 0.88rem; display: flex; align-items: center; gap: 0.4rem; text-decoration: none; transition: color 0.2s; }
   .cta-dato:hover { color: white; }
 
   footer { background: #050505; padding: 2.5rem 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
-  .footer-logo { font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 800; color: white; text-transform: uppercase; letter-spacing: 1px; }
+  .footer-logo { font-family: var(--font-cond); font-size: 1.3rem; font-weight: 800; color: white; text-transform: uppercase; letter-spacing: 1px; }
   .footer-logo span { color: #60A5FA; }
-  footer p { color: rgba(255,255,255,0.3); font-size: 0.82rem; }
+  footer p { color: rgba(255,255,255,0.45); font-size: 0.82rem; }
 
   .whatsapp-btn { position: fixed; bottom: 2rem; right: 2rem; width: 58px; height: 58px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 8px 25px rgba(37,211,102,0.5); z-index: 999; transition: transform 0.3s; animation: pulse-wa 2s infinite; }
-  .whatsapp-btn:hover { transform: scale(1.1); }
+  .whatsapp-btn:hover { transform: scale(1.1); animation: none; }
   .whatsapp-btn svg { width: 30px; height: 30px; fill: white; }
 
   @keyframes fadeUp { from { opacity: 0; transform: translateY(25px); } to { opacity: 1; transform: translateY(0); } }
@@ -623,84 +468,74 @@
 </head>
 <body>
 
-<!-- H1 INVISIBLE — Solo para SEO e IA, no se muestra visualmente -->
-<h1 class="h1-seo">Ferretería Aritello | Copia de Llaves en Sabadell</h1>
+<a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
 
-<nav>
+<!-- H1 VISIBLE — FIX: integrado naturalmente en el eyebrow del hero (no hidden/clip) -->
+
+<nav role="navigation" aria-label="Navegación principal">
   <div class="logo">Ferretería <span>Aritello</span></div>
-  <ul class="nav-links">
+  <ul class="nav-links" id="navMenu" role="list">
     <li><a href="#llaves">Copia de llaves</a></li>
     <li><a href="#tipos">Tipos de llaves</a></li>
     <li><a href="#resenas">Reseñas</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#contacto" class="nav-cta">Llámanos</a></li>
   </ul>
-  <div class="nav-mobile-btn"><span></span><span></span><span></span></div>
+  <button class="nav-mobile-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu" type="button">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
-<section class="hero">
+<main id="contenido-principal">
+
+<section class="hero" aria-label="Ferretería Aritello — Copia de llaves en Sabadell">
   <div class="hero-inner">
     <div class="hero-left">
       <div class="hero-eyebrow">
         <div class="hero-eyebrow-line"></div>
-        <span>Ferretería Aritello · Carrer d'Elcano 79 · Sabadell 08204</span>
+        <!-- H1 visible integrado en el eyebrow — semánticamente correcto, visualmente discreto -->
+        <h1 class="h1-marca">Ferretería Aritello · Carrer d'Elcano 79 · Sabadell 08204</h1>
       </div>
-      <!-- H2 principal: categoría principal visible en el hero -->
       <h2 class="hero-h2-principal">Copia de llaves rápida en <span class="highlight">Sabadell</span> • Hoy mismo sin esperas</h2>
-      <p class="hero-desc">
-        ¿Necesitas copiar una llave ahora mismo? Estamos aquí. Sin esperas, sin cita previa. La ferretería más cercana de Sabadell con parking gratuito para clientes.
-      </p>
+      <p class="hero-desc">¿Necesitas copiar una llave ahora mismo? Estamos aquí. Sin esperas, sin cita previa. La ferretería más cercana de Sabadell con parking gratuito para clientes.</p>
       <div class="hero-btns">
         <a href="tel:+34937105998" class="btn-blanco">📞 Llama ahora — 93 710 59 98</a>
-        <a href="https://maps.google.com/?q=Ferreteria+Aritello+Carrer+Elcano+79+Sabadell" target="_blank" class="btn-outline-blanco">🗺️ Cómo llegar →</a>
+        <a href="https://maps.google.com/?q=Ferreteria+Aritello+Carrer+Elcano+79+Sabadell" target="_blank" rel="noopener" class="btn-outline-blanco">🗺️ Cómo llegar →</a>
       </div>
     </div>
     <div class="hero-cards">
-      <!-- H3: información dentro de la categoría hero -->
       <div class="hero-card">
         <div class="hero-card-icon">🔑</div>
-        <div>
-          <h3>Copia de llaves</h3>
-          <p>Cualquier tipo — en el momento, sin esperas</p>
-        </div>
+        <div><h3>Copia de llaves</h3><p>Cualquier tipo — en el momento, sin esperas</p></div>
         <span class="badge">Rápido</span>
       </div>
       <div class="hero-card">
         <div class="hero-card-icon">🔐</div>
-        <div>
-          <h3>Alta seguridad</h3>
-          <p>Cilindros antibumping y código dinámico</p>
-        </div>
+        <div><h3>Alta seguridad</h3><p>Cilindros antibumping y código dinámico</p></div>
         <span class="badge">Expert</span>
       </div>
       <div class="hero-card">
         <div class="hero-card-icon">🅿️</div>
-        <div>
-          <h3>Parking gratuito</h3>
-          <p>La única ferretería en Sabadell con parking</p>
-        </div>
+        <div><h3>Parking gratuito</h3><p>La única ferretería en Sabadell con parking</p></div>
         <span class="badge">Gratis</span>
       </div>
     </div>
   </div>
 </section>
 
-<div class="parking">
-  <span>🅿️</span>
+<div class="parking" role="complementary" aria-label="Parking gratuito">
+  <span aria-hidden="true">🅿️</span>
   <p><strong>Tenemos parking gratuito para clientes</strong> — Ven cuando quieras sin preocuparte por aparcar</p>
-  <span>🅿️</span>
+  <span aria-hidden="true">🅿️</span>
 </div>
 
-<!-- SECCIÓN LLAVES: H2 categoría + H3 información -->
-<section class="servicios" id="llaves">
+<section class="servicios" id="llaves" aria-label="Copia de llaves en Sabadell">
   <div class="servicios-inner">
     <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span>Nuestro servicio estrella</span></div>
-    <!-- H2: categoría -->
     <h2 class="section-title">Copia de <span>llaves</span><br>en Sabadell — hoy</h2>
     <div class="llaves">
       <div class="llaves-left">
-        <!-- H3: subtítulo informativo dentro de la categoría -->
-        <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:3rem;font-weight:900;color:white;text-transform:uppercase;line-height:1;margin-bottom:1rem;position:relative;z-index:2;">¿Dónde copiar llaves cerca de mí en Sabadell?</h3>
+        <h3>¿Dónde copiar llaves cerca de mí en Sabadell?</h3>
         <p>¿Buscas dónde copiar una llave cerca de ti en Sabadell? En Ferretería Aritello lo hacemos en el momento. Entras, nos das la llave y en minutos te vas con tu copia lista. Sin cita, sin esperas.</p>
         <ul class="llaves-lista">
           <li>Llaves de casa y portal</li>
@@ -711,68 +546,31 @@
         </ul>
       </div>
       <div class="llaves-right">
-        <div class="llave-card">
-          <h3>Copia de llaves rápida</h3>
-          <p>No necesitas pedir cita. Entra, nos traes la llave original y en minutos tienes tu copia lista.</p>
-        </div>
-        <div class="llave-card">
-          <h3>Todos los tipos de llaves</h3>
-          <p>Llaves planas, de seguridad, tubulares, de coche, de buzón... Si tienes la original, hacemos la copia.</p>
-        </div>
-        <div class="llave-card">
-          <h3>Estamos en Carrer d'Elcano 79, Sabadell</h3>
-          <p>La ferretería más cercana con copia de llaves en el momento y parking gratuito para clientes.</p>
-        </div>
+        <div class="llave-card"><h3>Copia de llaves rápida</h3><p>No necesitas pedir cita. Entra, nos traes la llave original y en minutos tienes tu copia lista.</p></div>
+        <div class="llave-card"><h3>Todos los tipos de llaves</h3><p>Llaves planas, de seguridad, tubulares, de coche, de buzón... Si tienes la original, hacemos la copia.</p></div>
+        <div class="llave-card"><h3>Estamos en Carrer d'Elcano 79, Sabadell</h3><p>La ferretería más cercana con copia de llaves en el momento y parking gratuito para clientes.</p></div>
         <a href="tel:+34937105998" class="btn-azul" style="justify-content:center;">📞 Llama ahora — 93 710 59 98</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TIPOS DE LLAVES: H2 categoría + H3 por tipo -->
-<section class="tipos" id="tipos">
+<section class="tipos" id="tipos" aria-label="Tipos de llaves que copiamos en Sabadell">
   <div class="tipos-inner">
     <div class="tipos-header">
       <div class="section-eyebrow"><div class="section-eyebrow-line"></div><span>Catálogo completo</span></div>
-      <!-- H2: categoría -->
       <h2 class="section-title" style="color:white;">¿Qué tipo de llave necesitas <span style="color:#60A5FA;">copiar?</span></h2>
       <p>En Ferretería Aritello de Sabadell copiamos todo tipo de llaves en el momento. Somos expertos en sistemas de seguridad: desde llaves estándar hasta cilindros antibumping con código dinámico.</p>
     </div>
     <div class="tipos-grid">
-      <!-- H3: información — cada tipo de llave -->
-      <div class="tipo-card">
-        <span class="tipo-icon">🏠</span>
-        <h3>Llave de casa y portal</h3>
-        <p>Copiamos llaves de vivienda y portal: llaves planas, de perfil europeo y tubulares. En el momento en Sabadell. Sin esperas ni cita previa.</p>
-        <span class="tipo-tag">En el momento</span>
-      </div>
-      <div class="tipo-card">
-        <span class="tipo-icon">🔐</span>
-        <h3>Llaves de alta seguridad y cilindros antibumping</h3>
-        <p>Especialistas en llaves de cilindro antibumping en Sabadell. Marcas: Mul-T-Lock, EVVA, Keso, FAC. Llama al 93 710 59 98 para confirmar disponibilidad.</p>
-        <span class="tipo-tag">Alta seguridad</span>
-      </div>
-      <div class="tipo-card">
-        <span class="tipo-icon">🚗</span>
-        <h3>Llaves de coche y moto</h3>
-        <p>Copia de llaves de coche y moto en Sabadell. Llaves de contacto sin mando. Parking gratuito en Carrer d'Elcano 79. Sin esperas ni cita previa.</p>
-        <span class="tipo-tag">En el momento</span>
-      </div>
-      <div class="tipo-card">
-        <span class="tipo-icon">📬</span>
-        <h3>Llaves de buzón, candado, maletín y armario</h3>
-        <p>Copiamos llaves de buzón, candado, maletín, cajón, archivador y armario en el momento. Sin esperas. Parking gratuito en Carrer d'Elcano 79.</p>
-        <span class="tipo-tag">En el momento</span>
-      </div>
-      <div class="tipo-card">
-        <span class="tipo-icon">🔄</span>
-        <h3>Código dinámico (Rolling Code)</h3>
-        <p>Copiamos llaves con sistema de código dinámico (rolling code) en Sabadell. El sistema más seguro del mercado. Consulta compatibilidad en el 93 710 59 98.</p>
-        <span class="tipo-tag">Máxima seguridad</span>
-      </div>
+      <div class="tipo-card"><span class="tipo-icon" aria-hidden="true">🏠</span><h3>Llave de casa y portal</h3><p>Copiamos llaves de vivienda y portal: llaves planas, de perfil europeo y tubulares. En el momento en Sabadell. Sin esperas ni cita previa.</p><span class="tipo-tag">En el momento</span></div>
+      <div class="tipo-card"><span class="tipo-icon" aria-hidden="true">🔐</span><h3>Llaves de alta seguridad y cilindros antibumping</h3><p>Especialistas en llaves de cilindro antibumping en Sabadell. Marcas: Mul-T-Lock, EVVA, Keso, FAC. Llama al 93 710 59 98 para confirmar disponibilidad.</p><span class="tipo-tag">Alta seguridad</span></div>
+      <div class="tipo-card"><span class="tipo-icon" aria-hidden="true">🚗</span><h3>Llaves de coche y moto</h3><p>Copia de llaves de coche y moto en Sabadell. Llaves de contacto sin mando. Parking gratuito en Carrer d'Elcano 79. Sin esperas ni cita previa.</p><span class="tipo-tag">En el momento</span></div>
+      <div class="tipo-card"><span class="tipo-icon" aria-hidden="true">📬</span><h3>Llaves de buzón, candado, maletín y armario</h3><p>Copiamos llaves de buzón, candado, maletín, cajón, archivador y armario en el momento. Sin esperas. Parking gratuito en Carrer d'Elcano 79.</p><span class="tipo-tag">En el momento</span></div>
+      <div class="tipo-card"><span class="tipo-icon" aria-hidden="true">🔄</span><h3>Código dinámico (Rolling Code)</h3><p>Copiamos llaves con sistema de código dinámico (rolling code) en Sabadell. El sistema más seguro del mercado. Consulta compatibilidad en el 93 710 59 98.</p><span class="tipo-tag">Máxima seguridad</span></div>
       <div class="tipo-card" style="background:rgba(27,63,139,0.25);border-color:rgba(47,95,191,0.5);">
-        <span class="tipo-icon">📍</span>
-        <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.2rem;font-weight:700;color:white;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:0.6rem;">Dónde estamos</h3>
+        <span class="tipo-icon" aria-hidden="true">📍</span>
+        <h3>Dónde estamos</h3>
         <p>Carrer d'Elcano 79, 08204 Sabadell (barrio Creu de Barberà). Parking gratuito. Lun–Vie 9:00–13:30 / 16:00–19:30. Sáb 9:00–13:30.</p>
         <a href="tel:+34937105998" style="display:inline-block;margin-top:0.8rem;color:#93B4FF;font-weight:600;text-decoration:none;">📞 93 710 59 98</a>
       </div>
@@ -780,158 +578,66 @@
   </div>
 </section>
 
-<!-- RESEÑAS -->
-<section class="resenas" id="resenas">
+<section class="resenas" id="resenas" aria-label="Reseñas de clientes de Ferretería Aritello">
   <div class="resenas-inner">
     <div class="resenas-header">
       <div class="section-eyebrow" style="justify-content:center;"><div class="section-eyebrow-line"></div><span>Lo que dicen nuestros clientes</span></div>
-      <!-- H2: categoría -->
       <h2 class="section-title" style="text-align:center;">Por qué elegir <span>Ferretería Aritello</span></h2>
     </div>
-    <div class="rating-global">
+    <div class="rating-global" aria-label="Puntuación media 4.8 sobre 5 en 63 reseñas">
       <div class="rating-num">4.8</div>
-      <div>
-        <div class="stars">★★★★★</div>
-        <div class="rating-count">63 reseñas en Google</div>
-      </div>
+      <div><div class="stars" aria-hidden="true">★★★★★</div><div class="rating-count">63 reseñas en Google</div></div>
     </div>
     <div class="resenas-grid">
-      <div class="resena-card">
-        <div class="resena-stars">★★★★★</div>
-        <p class="resena-texto">Fui a copiar una llave de casa en la ferretería de Sabadell y en 5 minutos listo. Muy amables y con parking gratuito en Carrer d'Elcano. La mejor ferretería cercana de Sabadell.</p>
-        <div class="resena-autor">
-          <div class="resena-avatar">M</div>
-          <div><div class="resena-nombre">María G.</div><div class="resena-fecha">Septiembre 2025</div></div>
-          <div class="resena-google">G</div>
-        </div>
-      </div>
-      <div class="resena-card">
-        <div class="resena-stars">★★★★★</div>
-        <p class="resena-texto">Me hicieron la copia de llave de portal en la ferretería Aritello de Sabadell. Rápido, profesional y con parking. Vivo en Can Rull y es la ferretería más cercana que tengo.</p>
-        <div class="resena-autor">
-          <div class="resena-avatar">J</div>
-          <div><div class="resena-nombre">Joan M.</div><div class="resena-fecha">Noviembre 2025</div></div>
-          <div class="resena-google">G</div>
-        </div>
-      </div>
-      <div class="resena-card">
-        <div class="resena-stars">★★★★★</div>
-        <p class="resena-texto">Necesitaba copiar una llave urgente en Sabadell y Ferretería Aritello en Carrer d'Elcano fue perfecta. En el momento y con trato excelente.</p>
-        <div class="resena-autor">
-          <div class="resena-avatar">L</div>
-          <div><div class="resena-nombre">Laura P.</div><div class="resena-fecha">Enero 2026</div></div>
-          <div class="resena-google">G</div>
-        </div>
-      </div>
-      <div class="resena-card">
-        <div class="resena-stars">★★★★★</div>
-        <p class="resena-texto">La mejor ferretería de Sabadell. Copia de llaves rapidísima y parking gratuito en Carrer d'Elcano 79. Vivo en la Creu Alta y siempre vengo aquí.</p>
-        <div class="resena-autor">
-          <div class="resena-avatar">A</div>
-          <div><div class="resena-nombre">Andreu V.</div><div class="resena-fecha">Febrero 2026</div></div>
-          <div class="resena-google">G</div>
-        </div>
-      </div>
+      <article class="resena-card"><div class="resena-stars" aria-label="5 estrellas">★★★★★</div><p class="resena-texto">Fui a copiar una llave de casa en la ferretería de Sabadell y en 5 minutos listo. Muy amables y con parking gratuito en Carrer d'Elcano. La mejor ferretería cercana de Sabadell.</p><div class="resena-autor"><div class="resena-avatar" aria-hidden="true">M</div><div><div class="resena-nombre">María G.</div><div class="resena-fecha">Septiembre 2025</div></div><div class="resena-google" aria-label="Reseña de Google">G</div></div></article>
+      <article class="resena-card"><div class="resena-stars" aria-label="5 estrellas">★★★★★</div><p class="resena-texto">Me hicieron la copia de llave de portal en la ferretería Aritello de Sabadell. Rápido, profesional y con parking. Vivo en Can Rull y es la ferretería más cercana que tengo.</p><div class="resena-autor"><div class="resena-avatar" aria-hidden="true">J</div><div><div class="resena-nombre">Joan M.</div><div class="resena-fecha">Noviembre 2025</div></div><div class="resena-google" aria-label="Reseña de Google">G</div></div></article>
+      <article class="resena-card"><div class="resena-stars" aria-label="5 estrellas">★★★★★</div><p class="resena-texto">Necesitaba copiar una llave urgente en Sabadell y Ferretería Aritello en Carrer d'Elcano fue perfecta. En el momento y con trato excelente.</p><div class="resena-autor"><div class="resena-avatar" aria-hidden="true">L</div><div><div class="resena-nombre">Laura P.</div><div class="resena-fecha">Enero 2026</div></div><div class="resena-google" aria-label="Reseña de Google">G</div></div></article>
+      <article class="resena-card"><div class="resena-stars" aria-label="5 estrellas">★★★★★</div><p class="resena-texto">La mejor ferretería de Sabadell. Copia de llaves rapidísima y parking gratuito en Carrer d'Elcano 79. Vivo en la Creu Alta y siempre vengo aquí.</p><div class="resena-autor"><div class="resena-avatar" aria-hidden="true">A</div><div><div class="resena-nombre">Andreu V.</div><div class="resena-fecha">Febrero 2026</div></div><div class="resena-google" aria-label="Reseña de Google">G</div></div></article>
     </div>
   </div>
 </section>
 
-<!-- FAQ: H2 categoría + H3 por pregunta -->
-<section class="faq" id="faq">
+<section class="faq" id="faq" aria-label="Preguntas frecuentes Ferretería Aritello Sabadell">
   <div class="faq-inner">
     <div class="faq-header">
       <div class="section-eyebrow" style="justify-content:center;"><div class="section-eyebrow-line"></div><span>Preguntas frecuentes</span></div>
-      <!-- H2: categoría -->
       <h2 class="section-title" style="text-align:center;">Todo lo que necesitas <span>saber</span></h2>
     </div>
     <div class="faq-list">
-      <!-- H3: información — cada pregunta -->
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          <h3>¿Dónde copiar una llave en Sabadell?</h3>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer"><p>En Ferretería Aritello, Carrer d'Elcano 79, Sabadell (08204). Copia de llaves en el momento, sin esperas ni cita previa. Parking gratuito para clientes. Tel: 93 710 59 98.</p></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          <h3>¿Qué es un cilindro antibumping y cómo copiarlo?</h3>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer"><p>Un cilindro antibumping resiste el bumping attack, una técnica de apertura no autorizada. En Ferretería Aritello, Carrer d'Elcano 79, Sabadell, asesoramos sobre cilindros antibumping y copiamos sus llaves. Tel: 93 710 59 98.</p></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          <h3>¿Dónde hacer copia de llaves de alta seguridad en Sabadell?</h3>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer"><p>Ferretería Aritello, Carrer d'Elcano 79, Sabadell, copia llaves de alta seguridad con cilindro antibumping y código dinámico (rolling code). Marcas: Mul-T-Lock, EVVA, Keso, FAC. Llama al 93 710 59 98 para confirmar disponibilidad.</p></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          <h3>¿Hay ferretería con parking en Sabadell?</h3>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer"><p>Sí. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell, es la única ferretería en Sabadell con parking gratuito para clientes. Abiertos lunes a sábado. Tel: 93 710 59 98.</p></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          <h3>Horario de Ferretería Aritello</h3>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer"><p>Lunes a viernes: 9:00–13:30 y 16:00–19:30. Sábados: 9:00–13:30. Domingos cerrado. Carrer d'Elcano 79, 08204 Sabadell. Parking gratuito para clientes. Tel: 93 710 59 98.</p></div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-question" onclick="toggleFaq(this)">
-          <h3>¿Es necesario pedir cita?</h3>
-          <div class="faq-icon">+</div>
-        </div>
-        <div class="faq-answer"><p>No. En Ferretería Aritello, Carrer d'Elcano 79, Sabadell, no hace falta cita previa. Ven directamente y te hacemos la copia en el momento. Parking gratuito. Tel: 93 710 59 98.</p></div>
-      </div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false" type="button"><h3>¿Dónde copiar una llave en Sabadell?</h3><div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><p>En Ferretería Aritello, Carrer d'Elcano 79, Sabadell (08204). Copia de llaves en el momento, sin esperas ni cita previa. Parking gratuito para clientes. Tel: 93 710 59 98.</p></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false" type="button"><h3>¿Qué es un cilindro antibumping y cómo copiarlo?</h3><div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><p>Un cilindro antibumping resiste el bumping attack, una técnica de apertura no autorizada. En Ferretería Aritello, Carrer d'Elcano 79, Sabadell, asesoramos sobre cilindros antibumping y copiamos sus llaves. Tel: 93 710 59 98.</p></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false" type="button"><h3>¿Dónde hacer copia de llaves de alta seguridad en Sabadell?</h3><div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><p>Ferretería Aritello, Carrer d'Elcano 79, Sabadell, copia llaves de alta seguridad con cilindro antibumping y código dinámico (rolling code). Marcas: Mul-T-Lock, EVVA, Keso, FAC. Llama al 93 710 59 98 para confirmar disponibilidad.</p></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false" type="button"><h3>¿Hay ferretería con parking en Sabadell?</h3><div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><p>Sí. Ferretería Aritello, Carrer d'Elcano 79, 08204 Sabadell, es la única ferretería en Sabadell con parking gratuito para clientes. Abiertos lunes a sábado. Tel: 93 710 59 98.</p></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false" type="button"><h3>Horario de Ferretería Aritello</h3><div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><p>Lunes a viernes: 9:00–13:30 y 16:00–19:30. Sábados: 9:00–13:30. Domingos cerrado. Carrer d'Elcano 79, 08204 Sabadell. Parking gratuito para clientes. Tel: 93 710 59 98.</p></div></div>
+      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)" aria-expanded="false" type="button"><h3>¿Es necesario pedir cita?</h3><div class="faq-icon" aria-hidden="true">+</div></button><div class="faq-answer"><p>No. En Ferretería Aritello, Carrer d'Elcano 79, Sabadell, no hace falta cita previa. Ven directamente y te hacemos la copia en el momento. Parking gratuito. Tel: 93 710 59 98.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- CONTACTO: H2 categoría + H3 por dato -->
-<section class="zona" id="contacto">
+<section class="zona" id="contacto" aria-label="Dirección y contacto Ferretería Aritello Sabadell">
   <div class="zona-inner">
     <div class="section-eyebrow" style="justify-content:center;margin-bottom:1rem;">
       <div class="section-eyebrow-line" style="background:rgba(255,255,255,0.5)"></div>
       <span style="color:rgba(255,255,255,0.7)">Dónde estamos</span>
     </div>
-    <!-- H2: categoría -->
     <h2>Ferretería Aritello — Sabadell</h2>
-    <p>Ven cuando quieras desde Creu Alta, Can Rull, Campoamor, Ca n'Oriac o cualquier barrio de Sabadell. Aparca gratis y encuentra todo lo que necesitas. Copia de llaves en el momento y ferretería completa.</p>
-    <a href="https://maps.google.com/?q=Ferreteria+Aritello+Carrer+Elcano+79+Sabadell" target="_blank" class="btn-blanco" style="display:inline-flex;margin-bottom:2rem;">🗺️ Cómo llegar — Abrir Google Maps</a>
+    <p class="zona-desc">Ven cuando quieras desde Creu Alta, Can Rull, Campoamor, Ca n'Oriac o cualquier barrio de Sabadell. Aparca gratis y encuentra todo lo que necesitas.</p>
+    <a href="https://maps.google.com/?q=Ferreteria+Aritello+Carrer+Elcano+79+Sabadell" target="_blank" rel="noopener" class="btn-blanco" style="display:inline-flex;margin-bottom:2rem;">🗺️ Cómo llegar — Abrir Google Maps</a>
     <div class="zona-info">
-      <!-- H3: información — dirección, teléfono, horario -->
-      <div class="zona-card">
-        <span class="icon">📍</span>
-        <h3>Dirección</h3>
-        <p>Carrer d'Elcano, 79<br>08204 Sabadell, Barcelona<br>Barrio: Creu de Barberà</p>
-      </div>
-      <div class="zona-card">
-        <span class="icon">📞</span>
-        <h3>Teléfono</h3>
-        <p>93 710 59 98<br>630 61 76 00</p>
-      </div>
-      <div class="zona-card">
-        <span class="icon">🕐</span>
-        <h3>Horario</h3>
-        <p>Lun–Vie: 9:00–13:30 / 16:00–19:30<br>Sábados: 9:00–13:30<br>Domingos: Cerrado</p>
-      </div>
+      <div class="zona-card"><span class="icon" aria-hidden="true">📍</span><h3>Dirección</h3><p>Carrer d'Elcano, 79<br>08204 Sabadell, Barcelona<br>Barrio: Creu de Barberà</p></div>
+      <div class="zona-card"><span class="icon" aria-hidden="true">📞</span><h3>Teléfono</h3><p><a href="tel:+34937105998" style="color:rgba(255,255,255,0.9);text-decoration:none;font-weight:600;">93 710 59 98</a><br><a href="tel:+34613020064" style="color:rgba(255,255,255,0.7);text-decoration:none;">630 61 76 00</a></p></div>
+      <div class="zona-card"><span class="icon" aria-hidden="true">🕐</span><h3>Horario</h3><p>Lun–Vie: 9:00–13:30 / 16:00–19:30<br>Sábados: 9:00–13:30<br>Domingos: Cerrado</p></div>
     </div>
   </div>
 </section>
 
-<!-- CTA FINAL -->
-<section class="cta">
+<section class="cta" aria-label="Contactar con Ferretería Aritello">
   <div class="cta-inner">
     <h2>¿Necesitas copiar<br>una <em>llave ahora?</em></h2>
-    <p>Ven directamente a Ferretería Aritello en Sabadell. Sin esperas, sin cita previa. En el momento tienes tu copia lista. Parking gratuito en Carrer d'Elcano 79, 08204 Sabadell. Cilindros antibumping y alta seguridad.</p>
+    <p class="cta-desc">Ven directamente a Ferretería Aritello en Sabadell. Sin esperas, sin cita previa. En el momento tienes tu copia lista. Parking gratuito en Carrer d'Elcano 79, 08204 Sabadell.</p>
     <div class="cta-btns">
       <a href="tel:+34937105998" class="btn-azul">📞 93 710 59 98 — Llama ya</a>
-      <a href="https://maps.google.com/?q=Ferreteria+Aritello+Carrer+Elcano+79+Sabadell" target="_blank" class="btn-outline-blanco2">🗺️ Cómo llegar</a>
+      <a href="https://maps.google.com/?q=Ferreteria+Aritello+Carrer+Elcano+79+Sabadell" target="_blank" rel="noopener" class="btn-outline-blanco2">🗺️ Cómo llegar</a>
     </div>
     <div class="cta-datos">
       <a href="tel:+34937105998" class="cta-dato">📞 93 710 59 98</a>
@@ -942,26 +648,34 @@
   </div>
 </section>
 
-<footer>
+</main>
+
+<footer role="contentinfo">
   <div class="footer-logo">Ferretería <span>Aritello</span></div>
   <p>© 2026 Ferretería Aritello · Carrer d'Elcano 79, 08204 Sabadell · 93 710 59 98 · Creu de Barberà · Vallès Occidental</p>
 </footer>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/34613020064?text=Hola!%20Necesito%20información%20sobre%20Ferretería%20Aritello%20en%20Sabadell" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp con Ferretería Aritello Sabadell">
-  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<a href="https://wa.me/34613020064?text=Hola!%20Necesito%20información%20sobre%20Ferretería%20Aritello%20en%20Sabadell" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp con Ferretería Aritello Sabadell">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
 <script>
-  // PERFORMANCE: sin forzar reflow — usamos requestAnimationFrame para
-  // separar la lectura del DOM (classList.contains) de la escritura (classList.add/remove)
-  function toggleFaq(el) {
-    var item = el.parentElement;
+  // FAQ accordion — batch lectura/escritura DOM (sin reflow forzado)
+  function toggleFaq(btn) {
+    var item = btn.closest('.faq-item');
     var isOpen = item.classList.contains('open');
-    // Leemos primero, escribimos después en un solo frame
+    var allItems = Array.from(document.querySelectorAll('.faq-item'));
+    // Fase escritura
     requestAnimationFrame(function() {
-      document.querySelectorAll('.faq-item').forEach(function(i) { i.classList.remove('open'); });
-      if (!isOpen) { item.classList.add('open'); }
+      allItems.forEach(function(i) {
+        i.classList.remove('open');
+        var b = i.querySelector('.faq-question');
+        if (b) b.setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
     });
   }
 </script>
