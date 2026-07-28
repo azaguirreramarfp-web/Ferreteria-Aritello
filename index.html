@@ -303,8 +303,8 @@
 }
 </script>
 
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=DM+Sans:wght@300;400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=DM+Sans:wght@300;400&display=swap"></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=DM+Sans:wght@300;400&display=swap&font-display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=DM+Sans:wght@300;400&display=swap&font-display=swap"></noscript>
 
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -329,7 +329,7 @@
   :root {
     --azul: #1B3F8B; --azul-oscuro: #0F2660; --azul-claro: #2F5FBF;
     --azul-muy-claro: #E8EEFA; --negro: #0A0A0A; --blanco: #FFFFFF;
-    --blanco-suave: #F7F8FC; --gris: #6B7280; --gris-claro: #E5E7EB; --amarillo: #F59E0B;
+    --blanco-suave: #F7F8FC; --gris: #4B5563; --gris-claro: #E5E7EB; --amarillo: #F59E0B;
     --verde-rfid: #10B981; --verde-rfid-dark: #059669;
     --font-cond: 'Barlow Condensed', system-ui, sans-serif;
     --font-sans: 'DM Sans', system-ui, sans-serif;
@@ -341,21 +341,21 @@
   .skip-link { position: absolute; top: -100%; left: 1rem; background: var(--azul); color: white; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 600; font-size: 0.875rem; z-index: 9999; text-decoration: none; }
   .skip-link:focus { top: 1rem; }
 
-  .h1-marca { font-family: var(--font-cond); font-size: 0.72rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.6); display: block; margin-bottom: 0.5rem; }
+  .h1-marca { font-family: var(--font-cond); font-size: 0.72rem; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.78); display: block; margin-bottom: 0.5rem; }
 
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1rem 3rem; display: flex; justify-content: space-between; align-items: center; background: rgba(255,255,255,0.97); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(27,63,139,0.1); }
   .logo { font-family: var(--font-cond); font-size: 1.6rem; font-weight: 800; color: var(--azul); letter-spacing: 1px; text-transform: uppercase; }
   .logo span { color: var(--negro); }
   .nav-links { display: flex; gap: 1.8rem; list-style: none; }
-  .nav-links a { text-decoration: none; color: var(--gris); font-size: 0.88rem; font-weight: 500; transition: color 0.2s; }
+  .nav-links a { text-decoration: none; color: var(--gris); font-size: 0.88rem; font-weight: 500; transition: color 0.2s; min-height: 44px; display: inline-flex; align-items: center; }
   .nav-links a:hover { color: var(--azul); }
   .nav-cta { background: var(--azul) !important; color: white !important; padding: 0.65rem 1.4rem; border-radius: 4px; }
-  .nav-mobile-btn { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+  .nav-mobile-btn { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 10px; min-width: 44px; min-height: 44px; justify-content: center; }
   .nav-mobile-btn span { width: 24px; height: 2px; background: var(--negro); display: block; }
 
   .hero { min-height: 100vh; background: var(--azul); display: flex; align-items: center; padding: 8rem 3rem 5rem; position: relative; overflow: hidden; contain: layout style; }
   .hero::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px); }
-  .hero::after { content: '🔑'; position: absolute; font-size: 35vw; right: -5%; top: 50%; transform: translateY(-50%); opacity: 0.04; pointer-events: none; }
+  .hero::after { content: ''; position: absolute; width: 50vw; height: 50vw; right: -8%; top: 50%; transform: translateY(-50%); opacity: 0.06; pointer-events: none; background: rgba(255,255,255,0.04); border-radius: 50%; will-change: auto; }
   .hero-inner { max-width: 1200px; margin: 0 auto; width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; position: relative; z-index: 2; }
   .hero-eyebrow { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem; animation: fadeUp 0.8s ease both; }
   .hero-eyebrow-line { width: 35px; height: 2px; background: rgba(255,255,255,0.5); }
@@ -363,7 +363,7 @@
   .highlight { color: white; background: rgba(255,255,255,0.15); padding: 0 0.2em; display: inline-block; }
   .hero-desc { color: rgba(255,255,255,0.85); font-size: 1rem; line-height: 1.8; font-weight: 300; max-width: 420px; margin-bottom: 2.5rem; animation: fadeUp 0.8s ease 0.2s both; }
   .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; animation: fadeUp 0.8s ease 0.3s both; }
-  .btn-blanco { background: white; color: var(--azul); padding: 1rem 2rem; font-weight: 700; text-decoration: none; border-radius: 4px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-cond); letter-spacing: 0.5px; font-size: 1rem; }
+  .btn-blanco { background: white; color: var(--azul); padding: 1rem 2rem; min-height: 44px; font-weight: 700; text-decoration: none; border-radius: 4px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-cond); letter-spacing: 0.5px; font-size: 1rem; }
   .btn-blanco:hover { background: var(--azul-muy-claro); transform: translateY(-2px); }
   .btn-outline-blanco { border: 2px solid rgba(255,255,255,0.5); color: white; padding: 1rem 2rem; font-weight: 500; text-decoration: none; border-radius: 4px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.4rem; }
   .btn-outline-blanco:hover { border-color: white; background: rgba(255,255,255,0.1); }
@@ -387,7 +387,7 @@
   .section-eyebrow span { color: var(--azul); font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; font-weight: 500; }
   h2.section-title { font-family: var(--font-cond); font-size: clamp(2.5rem, 4vw, 3.8rem); font-weight: 800; line-height: 1; color: var(--negro); text-transform: uppercase; margin-bottom: 1rem; }
   h2.section-title span { color: var(--azul); }
-  .btn-azul { background: var(--azul); color: white; padding: 1.1rem 2.2rem; font-weight: 700; font-size: 1rem; text-decoration: none; border-radius: 4px; transition: all 0.3s; font-family: var(--font-cond); letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.5rem; }
+  .btn-azul { background: var(--azul); color: white; padding: 1.1rem 2.2rem; min-height: 44px; font-weight: 700; font-size: 1rem; text-decoration: none; border-radius: 4px; transition: all 0.3s; font-family: var(--font-cond); letter-spacing: 0.5px; text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.5rem; }
   .btn-azul:hover { background: var(--azul-claro); transform: translateY(-2px); }
 
   /* LLAVES */
@@ -415,7 +415,7 @@
   .tipos-header .section-eyebrow-line { background: rgba(255,255,255,0.3); }
   .tipos-header .section-eyebrow span { color: rgba(255,255,255,0.5); }
   .tipos-header h2 { color: white; }
-  .tipos-header p { color: rgba(255,255,255,0.65); font-size: 1rem; line-height: 1.8; font-weight: 300; max-width: 620px; margin: 0.8rem auto 0; }
+  .tipos-header p { color: rgba(255,255,255,0.82); font-size: 1rem; line-height: 1.8; font-weight: 300; max-width: 620px; margin: 0.8rem auto 0; }
   .tipos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
   .tipo-card { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 2rem; transition: all 0.3s; position: relative; overflow: hidden; }
   .tipo-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px; background: var(--azul-claro); transform: scaleX(0); transform-origin: left; transition: transform 0.3s; }
@@ -436,7 +436,7 @@
   .rfid-header h2 { color: white; }
   .rfid-header h2 span { color: var(--verde-rfid); }
   .rfid-header p { color: rgba(255,255,255,0.65); font-size: 1rem; line-height: 1.8; font-weight: 300; max-width: 680px; margin: 0.8rem auto 0; }
-  .rfid-subtitulo { color: rgba(255,255,255,0.38) !important; font-size: 0.82rem !important; letter-spacing: 0.3px; margin-top: 0.5rem !important; }
+  .rfid-subtitulo { color: rgba(255,255,255,0.62) !important; font-size: 0.82rem !important; letter-spacing: 0.3px; margin-top: 0.5rem !important; }
 
   .rfid-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
   .rfid-card { background: rgba(16,185,129,0.04); border: 1px solid rgba(16,185,129,0.12); border-radius: 8px; padding: 1.3rem; transition: all 0.3s; position: relative; overflow: hidden; }
@@ -445,7 +445,7 @@
   .rfid-card:hover::before { transform: scaleX(1); }
   .rfid-icon { font-size: 1.6rem; margin-bottom: 0.6rem; display: block; }
   .rfid-card h3 { font-family: var(--font-cond); font-size: 1rem; font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 0.4px; margin-bottom: 0.4rem; }
-  .rfid-card p { font-size: 0.8rem; color: rgba(255,255,255,0.6); line-height: 1.6; font-weight: 300; }
+  .rfid-card p { font-size: 0.8rem; color: rgba(255,255,255,0.72); line-height: 1.6; font-weight: 300; }
   .rfid-tag { display: inline-block; background: rgba(16,185,129,0.2); color: #6EE7B7; font-size: 0.65rem; padding: 0.15rem 0.5rem; border-radius: 3px; margin-top: 0.5rem; font-family: var(--font-cond); letter-spacing: 1px; text-transform: uppercase; font-weight: 600; }
   .rfid-card-cta { background: rgba(27,63,139,0.3); border-color: rgba(47,95,191,0.4); }
   .rfid-card-cta:hover { background: rgba(27,63,139,0.5); }
@@ -457,7 +457,7 @@
   .rfid-freq-badge--mando { background: rgba(251,191,36,0.15); color: #FCD34D; }
   .rfid-freq-item div { display: flex; align-items: baseline; gap: 0.5rem; flex-wrap: wrap; }
   .rfid-freq-item strong { color: rgba(255,255,255,0.85); font-size: 0.78rem; white-space: nowrap; }
-  .rfid-freq-item span { color: rgba(255,255,255,0.4); font-size: 0.73rem; line-height: 1.4; }
+  .rfid-freq-item span { color: rgba(255,255,255,0.62); font-size: 0.73rem; line-height: 1.4; }
   .rfid-freq-uso { display: none; }
 
   /* RFID — FAQ inline */
@@ -465,7 +465,7 @@
   .rfid-faq-item { border-bottom: 1px solid rgba(255,255,255,0.07); border-right: 1px solid rgba(255,255,255,0.07); padding: 1rem 1.2rem; }
   .rfid-faq-item:nth-child(even) { border-right: none; }
   .rfid-faq-item h3 { font-family: var(--font-cond); font-size: 0.88rem; font-weight: 700; color: rgba(255,255,255,0.85); text-transform: uppercase; letter-spacing: 0.3px; margin-bottom: 0.35rem; }
-  .rfid-faq-item p { font-size: 0.78rem; color: rgba(255,255,255,0.5); line-height: 1.6; font-weight: 300; }
+  .rfid-faq-item p { font-size: 0.78rem; color: rgba(255,255,255,0.7); line-height: 1.6; font-weight: 300; }
 
   /* RESEÑAS */
   .resenas { padding: 7rem 3rem; background: var(--blanco-suave); }
@@ -523,13 +523,13 @@
   .btn-outline-blanco2 { border: 2px solid rgba(255,255,255,0.3); color: white; padding: 1.1rem 2.2rem; font-weight: 500; font-size: 0.95rem; text-decoration: none; border-radius: 4px; transition: all 0.3s; display: inline-flex; align-items: center; gap: 0.4rem; }
   .btn-outline-blanco2:hover { border-color: white; }
   .cta-datos { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
-  .cta-dato { color: rgba(255,255,255,0.65); font-size: 0.88rem; display: flex; align-items: center; gap: 0.4rem; text-decoration: none; transition: color 0.2s; }
+  .cta-dato { color: rgba(255,255,255,0.8); font-size: 0.88rem; display: flex; align-items: center; gap: 0.4rem; text-decoration: none; transition: color 0.2s; }
   .cta-dato:hover { color: white; }
 
   footer { background: #050505; padding: 2.5rem 3rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
   .footer-logo { font-family: var(--font-cond); font-size: 1.3rem; font-weight: 800; color: white; text-transform: uppercase; letter-spacing: 1px; }
   .footer-logo span { color: #60A5FA; }
-  footer p { color: rgba(255,255,255,0.45); font-size: 0.82rem; }
+  footer p { color: rgba(255,255,255,0.65); font-size: 0.82rem; }
 
   .whatsapp-btn { position: fixed; bottom: 2rem; right: 2rem; width: 58px; height: 58px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 8px 25px rgba(37,211,102,0.5); z-index: 999; transition: transform 0.3s; animation: pulse-wa 2s infinite; }
   .whatsapp-btn:hover { transform: scale(1.1); animation: none; }
